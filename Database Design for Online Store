@@ -1,0 +1,23 @@
+1. For user information table:
+create table User_Info (UserID integer primary key autoincrement, FirstName varchar(50), LastName varchar(50), Email varchar(50), Password varchar(50)); 
+
+Insert user information when a new user registers:
+insert into User_Info(FirstName, LastName, Email, Password) values ('john', 'liu', 'jliu@gmail.com', '3334');
+
+Select user information when a user login, compare login email account and password with user information in table:
+select * from User_Info where Email = ?
+
+2. For order information table:
+create table Order_Info (OrderID integer primary key autoincrement, Order_Date dateTIME, Card_Number varchar(50), Email varchar(50), Product_Description varchar(50),  Amount int, Total_Price int); 
+
+When a user checks out, insert his/her order into Order_Info table:
+insert into Order_Info('Order_Date', 'Email', 'Product Description', 'Amount', 'Total Price') values('2001-03-30 03:33:00', 'ho@gmail.com', '2222', '1', '54')
+
+When a user wants to see his/her history order:
+select * from User_Info where Email = ?
+
+3. For product information:
+create table Product (ProductID integer primary key autoincrement, ProductName varchar(50), ProductColor varchar(50), ProductImg varchar(50), ProductPrice double); 
+
+Select product information when the index.jsp displays all the product, or when a user wants to search some products:
+select * from Product

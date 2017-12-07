@@ -1,0 +1,6 @@
+Steps to run Lipstick Store:
+1. Open NetBeans IDE, click "file-import project-from ZIP";
+2. In "ZIP file", clcik "Browser" to add "LipstickStore.zip", choose where to put this project on your computer by clicking "folder" and then click "import" to import this project;
+3. Once LipstickStore project is opened, under the direction /META-INF, open "context.xml";
+4. In resource tag, change "url="jdbc:sqlite:F:\NetBeansProjects\OnlineStore\LipstickStore\build\web\sqlite.db"" to your new absolute path where you put this project on your computer;
+5. clikc "run", then you can see the store's web page and buy products now.
